@@ -1,0 +1,32 @@
+AddEntity("Money Printer", {
+	ent = "money_printer",
+	model = "models/props_c17/consolebox01a.mdl",
+	price = 1000,
+	max = 1,
+	cmd = "/buymoneyprinter",
+	customCheck = function(ply)
+		return not ply:IsCP()
+	end
+})
+
+AddEntity("Money Printer Cooler", {
+	ent = "money_printer_cooler",
+	model = "models/props_lab/reciever01a.mdl",
+	price = 5000,
+	max = 2,
+	cmd = "/buymoneyprintercooler",
+	customCheck = function(ply)
+		return not ply:IsCP()
+	end
+})
+
+AddEntity("Money Printer Ink", {
+	ent = "money_printer_ink",
+	model = "models/props_junk/metal_paintcan001b.mdl",
+	price = 100,
+	max = 4,
+	cmd = "/buymoneyprinterink",
+	customCheck = function(ply)
+		return not ply:IsCP()
+	end
+})
